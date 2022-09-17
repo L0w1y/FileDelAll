@@ -15,9 +15,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QCheckBox, QLabel, QLineEdit,
-    QMainWindow, QPushButton, QSizePolicy, QToolButton,
-    QWidget)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QLineEdit, QMainWindow,
+    QPushButton, QSizePolicy, QToolButton, QWidget)
+import layout_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -26,6 +26,10 @@ class Ui_MainWindow(object):
         MainWindow.resize(800, 140)
         MainWindow.setMaximumSize(QSize(800, 140))
         MainWindow.setBaseSize(QSize(800, 140))
+        icon = QIcon()
+        icon.addFile(u":/icon/icon_new.svg", QSize(), QIcon.Normal, QIcon.Off)
+        MainWindow.setWindowIcon(icon)
+        MainWindow.setDocumentMode(False)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setMinimumSize(QSize(800, 140))
@@ -95,5 +99,6 @@ class Ui_MainWindow(object):
         self.StartDelete_Button.setText(QCoreApplication.translate("MainWindow", u"\u0423\u0434\u0430\u043b\u0438\u0442\u044c!", None))
 #if QT_CONFIG(shortcut)
         self.StartDelete_Button.setShortcut(QCoreApplication.translate("MainWindow", u"Return", None))
+#endif // QT_CONFIG(shortcut)
     # retranslateUi
 

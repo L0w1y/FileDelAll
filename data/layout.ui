@@ -25,6 +25,13 @@
   <property name="windowTitle">
    <string>FileDelAll</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="layout.qrc">
+    <normaloff>:/icon/icon_new.svg</normaloff>:/icon/icon_new.svg</iconset>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <property name="minimumSize">
     <size>
@@ -176,30 +183,10 @@
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="ProgressBarLabel">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>110</y>
-      <width>231</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>240</width>
-      <height>20</height>
-     </size>
-    </property>
-    <property name="text">
-     <string>Процесс</string>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-   </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="layout.qrc"/>
+ </resources>
  <connections/>
 </ui>
