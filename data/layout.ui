@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>140</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>140</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>800</width>
+    <height>140</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>FileDelAll</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>800</width>
+     <height>140</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>800</width>
+     <height>140</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>800</width>
+     <height>140</height>
+    </size>
+   </property>
+   <widget class="QLineEdit" name="RootFolder_LineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>721</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string comment="Корневой каталог, от которого будет просматриваться подкатологи"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Корневой путь (Точка старта поиска и удаления файлов)</string>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="ChooseFolderButton">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+O</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="SaveTemporaryFiles_Checkbox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>331</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string comment="Удаляет список файлов, который создаётся в процессе поиска"/>
+    </property>
+    <property name="text">
+     <string>Удалять кешированный список найденных файлов</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Extentions_LineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>521</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="whatsThis">
+     <string comment="Вы можете написать любые расширения файлов. Последовательность через пробел"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Расширения для удаления (*.dll *.exe *.*)</string>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="StartDelete_Button">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>60</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Удалить!</string>
+    </property>
+    <property name="shortcut">
+     <string>Return</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ProgressBarLabel">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>110</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>240</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Процесс</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
