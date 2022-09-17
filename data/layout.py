@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 
 ################################################################################
 ## Form generated from reading UI file 'layout.ui'
@@ -17,7 +17,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QCheckBox, QLineEdit, QMainWindow,
     QPushButton, QSizePolicy, QToolButton, QWidget)
-import layout_rc
+import design_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):

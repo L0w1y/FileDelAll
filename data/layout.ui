@@ -26,7 +26,7 @@
    <string>FileDelAll</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="layout.qrc">
+   <iconset resource="../design.qrc">
     <normaloff>:/icon/icon_new.svg</normaloff>:/icon/icon_new.svg</iconset>
   </property>
   <property name="documentMode">
@@ -186,7 +186,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="layout.qrc"/>
+  <include location="../design.qrc"/>
  </resources>
  <connections/>
 </ui>

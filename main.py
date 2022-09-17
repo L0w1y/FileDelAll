@@ -4,14 +4,14 @@ import sys
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog
 from inspect import getsourcefile
 from os.path import abspath
-from data import ui
+from data import layout
 
 
 # region UI
 class Interface(QMainWindow):
     def __init__(self):
         super(Interface, self).__init__()
-        self.ui = ui.Ui_MainWindow()
+        self.ui = layout.Ui_MainWindow()
         self.ui.setupUi(self)
 
         # while editiong texts - checks the proceedd status
